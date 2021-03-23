@@ -1,0 +1,7 @@
+.mat-stroked-button {
+  &:not(.mat-button-disabled) {
+    &.mat-stroked-button:not(.mat-button-disabled) {
+        border-color: inherit;
+    }
+  }
+}

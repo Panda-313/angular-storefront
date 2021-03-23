@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 23" width="18" height="23">
+	<defs>
+		<image width="18" height="23" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAXCAYAAAAGAx/kAAABrklEQVQ4T+2UO2gUYRSFvzMh7O7MRhBsFGzsTOULxc5KIlj4IFhpIYIKioqlhVhYiopCFMRCKwmihWBIL6L4qmJnI2gjCO7OP7NI5si6u7KbrGPcVv/y3nM+/nu594ohr9Hy5FjBBcNuYE1X8kUwvxhxeaKihaU2LQ2E4EMW94BPwH3Dh7ZGsAE4DKyTORLHetDvHQClqbcS8VwwW6tyVFKrX2y7kuXcNUxTsDNJ9LqXHwRlnsOsjWtsk/R9WNm2x0PGK8TnpKapZSDb9ZDzFTiZ1HRnGKQXSzMfA2biKqslNbuld9KNljdGBQsyO+JYL8tAIXi7xYsiYnKiovcDoGbTmzTGWy+yuV7XuzLQMK0amXd1iesFFw2XDB/LQIJlWqWZXWZaaa4HOh7B/EpN/bqiM7S3O6CC/Umix6OA0tT7iHj0H/T77v0jPWohziRV3RppjnKfwFxvz9Ez4FtS056RQJmfAqsUgg9YPJQ4HVd1829gIfcpmxsyB39eyGbuqzJngTnEE5u0dPtFgtkLTFlcq1d17tepDcHTFueBLcD4H37WPsNvZK7EsWbb2h/IL/Q2bQ/RdwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="1. homepage">
+		<g id="header">
+			<g id="icons menu">
+				<use id="basket icon" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+			</g>
+		</g>
+	</g>
+</svg>
