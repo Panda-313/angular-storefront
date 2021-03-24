@@ -1,0 +1,30 @@
+:host {
+  padding-top: 480px;
+  padding-bottom: 92px;
+  display: block;
+  background-image: url('../../../../../assets/images/background_image.png');
+  background-size: cover;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  bottom: 150px;
+  right: 61px;
+}
+
+h1 {
+  color: var(--light-grey-color);
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  margin-left: -50px;
+}
+
+span {
+  padding-left: 80px;
+}
+
+a {
+  width: auto;
+  margin-left: auto;
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 21" width="49" height="21">
+	<defs>
+		<image width="49" height="21" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAVCAYAAADvoQY8AAABF0lEQVRYR92Xr0pEQRjFz9Ey9w+LG8Vi8Q0W1CDYNIjNZPMRRPABrPoSG+4j2C2CInaT1SIY9s6dFcYjIy6ssoJxvjtx0u/HYeZ8H5HxmQTtU2gisT1wfPoLlRk74FUaFAF3ADgN2BoO+baIN2uJBByCNiJwD+G2dDgkGX+LZC+RgCdBexSuSVyWjucmJRK09zoVcSXguC7YzIuYSGIG7DuNBRzhAztVxYfZvSkJSc4H3ABYU8SorvmSRExJJOC21SqW8AjguXTYJfluTuL7fWyKX4k0VcETdp3WY8RKzn2xsBuWcQDgQsIZ204eQGFNYo532o8kLCbgvX6+CWsS5n+nXvSE+cY2PzuZn2LN7xO92Oz+u2N/ArP9lbENdHnCAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="1. homepage">
+		<g id="top section">
+			<g id="button GO SHOP">
+				<use id="arrow" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+			</g>
+		</g>
+	</g>
+</svg>

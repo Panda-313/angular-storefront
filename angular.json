@@ -127,5 +127,13 @@
       }
     }
   },
-  "defaultProject": "my-storefront"
+  "defaultProject": "my-storefront",
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "changeDetection": "OnPush",
+        "displayBlock": true
+      }
+    }
+  }
 }

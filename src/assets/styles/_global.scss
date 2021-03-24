@@ -10,5 +10,21 @@ body, html, * {
 }
 
 body {
-  height: 100%;
+  height: 100vh;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+.link-button {
+  color: var(--light-grey-color) !important;
+  border-color: var(--light-grey-color) !important;
+  text-transform: uppercase;
+  font-size: 18px;
+
+  &.link-button--primary {
+    color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+  }
 }

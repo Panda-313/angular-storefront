@@ -1,0 +1,95 @@
+@import '../../../../../assets/styles/material-theme';
+
+$accent-map: map-get($theme, accent);
+$accent-color: mat-color($accent-map, main);
+
+:host {
+  display: block;
+  background-color: var(--light-blue-color);
+  height: 100%;
+  overflow: auto;
+}
+
+section {
+  position: relative;
+  padding-bottom: 100px;
+
+  h2, h3 {
+    margin-bottom: 0;
+    color: $accent-color;
+    position: relative;
+    z-index: 1;
+  }
+
+  p {
+    margin-top: 37px;
+    color: var(--light-dark-color);
+    margin-bottom: 98px;
+  }
+}
+
+sf-header {
+  margin-bottom: 280px;
+}
+
+.home-page {
+  &__section {
+    &__main-image-wrapper {
+      position: absolute;
+      right: 0;
+      top: -100px;
+      z-index: 0;
+    }
+
+    &__secondary-img {
+      position: absolute;
+      bottom: -140px;
+      right: -200px;
+      z-index: -1;
+    }
+  }
+
+  &__second-section {
+    &__main-image-wrapper {
+      position: absolute;
+      left: 0;
+      top: -100px;
+      z-index: 0;
+    }
+
+    &__extra-img {
+      position: absolute;
+      top: -90px;
+      left: 569px;
+      z-index: -1;
+    }
+
+    &__secondary-img {
+      position: absolute;
+      bottom: -140px;
+      left: -200px;
+      z-index: -1;
+    }
+  }
+
+  &__second-section-wrapper {
+    margin-top: 231px;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__wave-img {
+    &__1 {
+      margin-left: auto;
+      display: block;
+    }
+
+    &__2 {
+      margin-left: auto;
+      display: block;
+      margin-right: 210px;
+      margin-top: 40px;
+    }
+  }
+}
