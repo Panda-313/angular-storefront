@@ -5,6 +5,7 @@ import { HomePageRoutingModule } from './home-page-routing.module';
 import { HomePageComponent } from './containers/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import {CustomMaterialModule} from "../custom-material/custom-material.module";
+import {SharedModule} from "../shared/shared.module";
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import {CustomMaterialModule} from "../custom-material/custom-material.module";
   imports: [
     CommonModule,
     HomePageRoutingModule,
-    CustomMaterialModule
+    CustomMaterialModule,
+    SharedModule
   ]
 })
 export class HomePageModule { }

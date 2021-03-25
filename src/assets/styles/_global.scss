@@ -28,3 +28,9 @@ button {
     border-color: var(--accent-color) !important;
   }
 }
+
+.mat-stroked-button {
+  &.mat-secondary {
+    color: var(--accent-color);
+  }
+}

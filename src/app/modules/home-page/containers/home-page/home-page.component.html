@@ -66,3 +66,61 @@
 
 <img src="../../../../../assets/images/graphic_element_extra_2.png" alt="" class="home-page__wave-img__1">
 <img src="../../../../../assets/images/graphic_element_extra_3.png" alt="" class="home-page__wave-img__2">
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="mat-display-2 home-page__featured-products__title">
+        Featured products
+      </h3>
+    </div>
+
+    <sf-product-card *ngFor="let product of mockedProducts" class="col-3" [product]="product" [showActionBtn]="true" [actionBtnText]="'Add to card'"></sf-product-card>
+    <div class="col-3">
+      <sf-action-card></sf-action-card>
+    </div>
+  </div>
+</div>
+
+<div class="container home-page__blog-section-wrapper">
+  <div class="row home-page__blog-section-row">
+    <div class="col-7">
+      <span class="home-page__blog-title">Blog&</span>
+      <span class="home-page__blog-title home-page__blog-title--secondary">News</span>
+    </div>
+
+    <div class="offset-1 col-4">
+      <sf-blog-card [blogPost]="mockedBlogPosts[0]" [showActionBtn]="true" [actionBtnText]="'Read more'"></sf-blog-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <sf-blog-card [blogPost]="mockedBlogPosts[1]" [showActionBtn]="true" [actionBtnText]="'Read more'"></sf-blog-card>
+    </div>
+
+    <div class="offset-1 col-3 home-page__blog-section__blog-card--move-to-top">
+      <sf-blog-card [blogPost]="mockedBlogPosts[2]" [showActionBtn]="true" [actionBtnText]="'Read more'"></sf-blog-card>
+    </div>
+  </div>
+
+  <div class="row home-page__extra-blog-discover-row">
+    <div class="col-12">
+      <a href="" mat-stroked-button class="link-button link-button--primary">
+        Discover the blog
+
+        <mat-icon>
+          east
+        </mat-icon>
+      </a>
+    </div>
+  </div>
+</div>
+
+<img src="../../../../../assets/images/blog_additional_elements.png" alt="" class="home-page__extra-blog-graphic" />
+
+
+<div class="container-fluid">
+  <div class="row">
+
+  </div>
+</div>

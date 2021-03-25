@@ -1,0 +1,10 @@
+<img [src]="blogPost.blogPostImageSrc"  [alt]="blogPost.blogPostImageAlt" />
+<span>
+  {{ blogPost.blogPostDate | date}}
+</span>
+<h6 class="mat-headline">
+  {{blogPost.blogPostTitle}}
+</h6>
+<button mat-stroked-button color="secondary" *ngIf="showActionBtn" type="button" (click)="onActionBtnClick()">
+  {{ actionBtnText }}
+</button>

@@ -1,0 +1,10 @@
+<img [src]="product.productImageSrc"  [alt]="product.productImageAlt" />
+<h6 class="mat-headline">
+  {{product.productTitle}}
+</h6>
+<span>
+  {{ product.productPrice }}
+</span>
+<button mat-stroked-button color="secondary" *ngIf="showActionBtn" type="button" (click)="onActionBtnClick()">
+  {{ actionBtnText }}
+</button>

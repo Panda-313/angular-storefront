@@ -1,5 +1,5 @@
 import {Component, HostBinding, OnInit} from '@angular/core';
-import {NAV_LINKS} from "../consts/nav-links.const";
+import {NAV_LINKS} from "../../consts/nav-links.const";
 
 @Component({
   selector: 'sf-main-nav',
