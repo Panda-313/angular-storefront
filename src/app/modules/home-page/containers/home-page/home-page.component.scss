@@ -6,8 +6,6 @@ $accent-color: mat-color($accent-map, main);
 :host {
   display: block;
   background-color: var(--light-blue-color);
-  height: 100%;
-  overflow: auto;
 }
 
 section {
@@ -143,5 +141,15 @@ sf-header {
 
   &__blog-section-wrapper {
     margin-top: 325px;
+  }
+
+  &__contact-section-wrapper {
+    margin-top: 200px;
+  }
+
+  &__subscribe-form-section {
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
   }
 }

@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+span {
+  color: var(--light-dark-color-3);
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+a {
+  font-size: 18px;
+  color: var(--light-dark-color);
+  font-weight: 300;
+}
+
+
+.main-footer {
+  &__nav-links {
+    li {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 18px;
+    }
+  }
+}

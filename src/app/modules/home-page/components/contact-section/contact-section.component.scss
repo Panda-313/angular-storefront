@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  padding: 180px 430px 267px 335px;
+  position: relative;
+  background-color: var(--primary-lighter-color);
+  width: auto;
+}
+
+h3 {
+  color: var(--light-dark-color);
+  margin-bottom: 94px;
+}
+
+.contact-section__cards-wrapper {
+  display: flex;
+
+  > * {
+    margin-right: 110px;
+  }
+}
+
+img {
+  &:first-of-type {
+    position: absolute;
+    left: 0;
+  }
+
+  &:last-of-type {
+    position: absolute;
+    right: -110px;
+    top: 50px;
+  }
+}

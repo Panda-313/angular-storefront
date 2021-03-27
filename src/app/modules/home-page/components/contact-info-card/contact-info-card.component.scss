@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+span {
+  color: var(--light-dark-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 24px;
+  white-space: nowrap;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--light-dark-color);
+}

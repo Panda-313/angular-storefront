@@ -34,3 +34,23 @@ button {
     color: var(--accent-color);
   }
 }
+
+.mat-form-field {
+  &.mat-form-field-appearance-fill.mat-primary {
+    .mat-form-field-flex {
+      background-color: var(--light-grey-color);
+    }
+
+    .mat-form-field-label-wrapper {
+      label {
+        color: var(--light-dark-color);
+      }
+    }
+
+    input {
+      &::placeholder {
+        color: var(--light-dark-color);
+      }
+    }
+  }
+}
