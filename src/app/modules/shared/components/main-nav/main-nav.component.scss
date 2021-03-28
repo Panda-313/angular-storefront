@@ -48,7 +48,7 @@ img {
   &__link-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   &__extra-wrapper {
@@ -68,8 +68,13 @@ a {
   text-decoration: none;
   text-transform: capitalize;
   letter-spacing: 2px;
+  margin-right: 16px;
 
   &.main-nav__link--active {
     font-weight: 700;
   }
+}
+
+mat-icon {
+  color: #fff;
 }

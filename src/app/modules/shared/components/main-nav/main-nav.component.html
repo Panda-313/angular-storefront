@@ -1,33 +1,36 @@
 <div class="container">
   <nav class="row">
-    <div class="col-1 main-nav__logo-wrapper">
+    <div class="col-6 col-md-2 main-nav__logo-wrapper">
       <img src="../../../../../assets/images/logo.png" alt="logo">
     </div>
 
-    <div class="main-nav__link-wrapper offset-3 col-3">
+    <div class="main-nav__link-wrapper  col-6 d-none d-md-flex">
       <a *ngFor="let navLink of navLinks" [routerLink]="navLink.path" [routerLinkActive]="'main-nav__link--active'">
         {{ navLink.label }}
       </a>
     </div>
 
-    <div class="main-nav__extra-wrapper offset-2 col-3">
-      <mat-form-field>
+    <div class="main-nav__extra-wrapper offset-3 offset-md-1 offset-xl-2 col-xl-2 col-3">
+      <mat-form-field class="d-none d-md-block">
         <input type="text" matInput placeholder="Search">
         <mat-icon matSuffix>search</mat-icon>
       </mat-form-field>
 
       <button mat-icon-button>
-        <mat-icon svgIcon="custom-basket">
+        <mat-icon>
+          person_outline
         </mat-icon>
       </button>
 
       <button mat-icon-button>
-        <mat-icon svgIcon="custom-client">
+        <mat-icon>
+          shopping_cart
         </mat-icon>
       </button>
 
-      <button mat-icon-button>
-        <mat-icon svgIcon="custom-wishlist">
+      <button mat-icon-button class="d-md-none">
+        <mat-icon>
+          menu
         </mat-icon>
       </button>
     </div>
