@@ -1,8 +1,9 @@
 @import '~scss-reset/reset';
 @import "variables";
+@import "bootstrap";
 @import 'material';
 @import 'material-theme';
+@import 'material-rwd';
 @import 'global';
 @import "typography";
 @import 'custom-material/custom-material';
-@import "bootstrap";
