@@ -5,17 +5,17 @@
     <section class="col-12">
       <h3 class="mat-display-1">Case omnium</h3>
       <h2 class="mat-display-3">Temporibus in quo?</h2>
+      <p class="mat-body-2">
+        Magnis dis parturient montes nascetur ridiculus. Quam <br/> viverra orci sagittis eu volutpat odio facilisis
+        mauris. <br/>
+        Consectetur adipiscing elit duis tristique. Etiam sit amet <br/>nisl purus.
+      </p>
       <div class="home-page__section__main-image-wrapper">
         <img src="../../../../../assets/images/1005х630.png" alt="Image">
 
         <img src="../../../../../assets/images/blue_square_with_extra.png" alt=""
              class="home-page__section__secondary-img">
       </div>
-      <p class="mat-body-2">
-        Magnis dis parturient montes nascetur ridiculus. Quam <br/> viverra orci sagittis eu volutpat odio facilisis
-        mauris. <br/>
-        Consectetur adipiscing elit duis tristique. Etiam sit amet <br/>nisl purus.
-      </p>
       <a mat-stroked-button class="link-button link-button--primary">
         More info
 
@@ -34,7 +34,7 @@
   <div class="row">
     <section class="col-12">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-lg-6 order-2 order-lg-1">
           <img src="../../../../../assets/images/770х480.png" alt="Image">
 
 
@@ -43,7 +43,7 @@
           <img src="../../../../../assets/images/background_shape_3.png" alt="" class="home-page__second-section__secondary-img">
         </div>
 
-        <div class="col-6 home-page__second-section__text">
+        <div class="col-12 col-lg-6 home-page__second-section__text">
           <h2 class="mat-display-3">Nec iudicabit</h2>
           <p class="mat-body-2">
             Quis viverra nibh cras pulvinar mattis <br/> nunc sed blandit libero. Nunc lobortis mattis aliquam
@@ -51,7 +51,7 @@
             Congue nisi vitae suscipit tellus mauris a diam maecenas. Vitae proin sagittis nisl <br/> rhoncus mattis. Elit sed
             vulputate mi sit amet.
           </p>
-          <a mat-stroked-button class="link-button link-button--primary">
+          <a mat-stroked-button class="link-button link-button--primary d-none d-md-block">
             More info
 
             <mat-icon>
@@ -59,6 +59,14 @@
             </mat-icon>
           </a>
         </div>
+
+        <a mat-stroked-button class="link-button link-button--primary order-3 d-md-none home-page__second-section__read-more-btn">
+          More info
+
+          <mat-icon>
+            east
+          </mat-icon>
+        </a>
       </div>
     </section>
   </div>
@@ -75,8 +83,8 @@
       </h3>
     </div>
 
-    <sf-product-card *ngFor="let product of mockedProducts" class="col-3" [product]="product" [showActionBtn]="true" [actionBtnText]="'Add to card'"></sf-product-card>
-    <div class="col-3">
+    <sf-product-card *ngFor="let product of mockedProducts" class="col-12 col-md-3" [product]="product" [showActionBtn]="true" [actionBtnText]="'Add to card'"></sf-product-card>
+    <div class="col-3 d-none d-md-block">
       <sf-action-card></sf-action-card>
     </div>
   </div>
@@ -84,21 +92,21 @@
 
 <div class="container home-page__blog-section-wrapper">
   <div class="row home-page__blog-section-row">
-    <div class="col-7">
+    <div class="col-12 col-md-7">
       <span class="home-page__blog-title">Blog&</span>
       <span class="home-page__blog-title home-page__blog-title--secondary">News</span>
     </div>
 
-    <div class="offset-1 col-4">
+    <div class="col-12 offset-md-1 col-md-4">
       <sf-blog-card [blogPost]="mockedBlogPosts[0]" [showActionBtn]="true" [actionBtnText]="'Read more'"></sf-blog-card>
     </div>
   </div>
   <div class="row">
-    <div class="col-6">
+    <div class="col-12 col-md-6">
       <sf-blog-card [blogPost]="mockedBlogPosts[1]" [showActionBtn]="true" [actionBtnText]="'Read more'"></sf-blog-card>
     </div>
 
-    <div class="offset-1 col-3 home-page__blog-section__blog-card--move-to-top">
+    <div class="col-12 offset-md-1 col-md-3 home-page__blog-section__blog-card--move-to-top">
       <sf-blog-card [blogPost]="mockedBlogPosts[2]" [showActionBtn]="true" [actionBtnText]="'Read more'"></sf-blog-card>
     </div>
   </div>
@@ -125,9 +133,9 @@
   </div>
 </div>
 
-<div class="container home-page__subscribe-form-section">
+<div class="container-fluid home-page__subscribe-form-section">
   <div class="row">
-    <div class="offset-6 col-6">
+    <div class="col-12 offset-md-6 col-md-6">
       <sf-subscribe-form-section></sf-subscribe-form-section>
     </div>
   </div>

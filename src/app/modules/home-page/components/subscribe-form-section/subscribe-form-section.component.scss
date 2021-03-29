@@ -1,8 +1,21 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
 :host {
   display: block;
   background-color: var(--primary-color);
   padding: 92px 108px 97px;
   position: relative;
+
+  @include media-breakpoint-down(md) {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 span {
@@ -13,6 +26,9 @@ span {
 
 .mat-form-field {
   width: 380px;
+  @include media-breakpoint-down(md) {
+    width: auto;
+  }
 }
 
 div {

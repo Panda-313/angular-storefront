@@ -1,14 +1,30 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
 :host {
   display: block;
   padding: 180px 430px 267px 335px;
   position: relative;
   background-color: var(--primary-lighter-color);
   width: auto;
+
+  @include media-breakpoint-down(md) {
+    padding: 115px 0 0;
+    width: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 h3 {
   color: var(--light-dark-color);
   margin-bottom: 94px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 60px;
+  }
 }
 
 .contact-section__cards-wrapper {
@@ -16,6 +32,15 @@ h3 {
 
   > * {
     margin-right: 110px;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+
+    > * {
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -29,5 +54,9 @@ img {
     position: absolute;
     right: -110px;
     top: 50px;
+  }
+
+  @include media-breakpoint-down(md) {
+    max-width: 30%;
   }
 }

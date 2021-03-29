@@ -1,3 +1,8 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
 :host {
   padding-top: 480px;
   padding-bottom: 92px;
@@ -5,12 +10,23 @@
   background-image: url('../../../../../assets/images/background_image.png');
   background-size: cover;
   position: relative;
+
+  @include media-breakpoint-down(xl) {
+    padding-top: 176px;
+  }
 }
 
 img {
   position: absolute;
   bottom: 150px;
   right: 61px;
+  z-index: 0;
+  @include media-breakpoint-down(lg) {
+    position: static;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 h1 {
@@ -18,13 +34,26 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 80px;
   margin-left: -50px;
+  position: relative;
+
+  @include media-breakpoint-down(xl) {
+    margin-left: 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-left: 20px;
+  }
 }
 
 span {
   padding-left: 80px;
+
+  @include media-breakpoint-down(xl) {
+    padding-left: 20px;
+  }
 }
 
-a {
+a.mat-stroked-button {
   width: auto;
   margin-left: auto;
 }

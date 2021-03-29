@@ -1,20 +1,26 @@
-@import '../../../../../assets/styles/material-theme';
-
-$accent-map: map-get($theme, accent);
-$accent-color: mat-color($accent-map, main);
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
 
 :host {
   display: block;
   background-color: var(--light-blue-color);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 section {
   position: relative;
   padding-bottom: 100px;
 
+  @include media-breakpoint-down(md) {
+    padding-bottom: 10px;
+  }
+
   h2, h3 {
     margin-bottom: 0;
-    color: $accent-color;
+    color: var(--accent-color);
     position: relative;
     z-index: 1;
   }
@@ -28,6 +34,10 @@ section {
 
 sf-header {
   margin-bottom: 280px;
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 111px;
+  }
 }
 
 .home-page {
@@ -38,6 +48,14 @@ sf-header {
       top: -100px;
       z-index: 0;
       max-width: 55%;
+
+      @include media-breakpoint-down(lg) {
+        margin-top: 83px;
+        position: relative;
+        top: unset;
+        max-width: 100%;
+        margin-bottom: 200px;
+      }
     }
 
     &__secondary-img {
@@ -68,6 +86,17 @@ sf-header {
       bottom: -140px;
       left: -200px;
       z-index: -1;
+
+      @include media-breakpoint-down(lg) {
+        left: -30px;
+        bottom: 190px;
+        max-height: 160px;
+      }
+    }
+
+    &__read-more-btn {
+      margin-top: 90px;
+      width: auto;
     }
   }
 
@@ -76,12 +105,20 @@ sf-header {
     padding-bottom: 60px;
     position: relative;
     z-index: 1;
+    @include media-breakpoint-down(lg) {
+      margin-top: 100px;
+      padding-bottom: 0;
+    }
   }
 
   &__wave-img {
     &__1 {
       margin-left: auto;
       display: block;
+
+      @include media-breakpoint-down(lg) {
+        max-width: 30%;
+      }
     }
 
     &__2 {
@@ -89,18 +126,32 @@ sf-header {
       display: block;
       margin-right: 210px;
       margin-top: 40px;
+
+      @include media-breakpoint-down(lg) {
+        max-width: 30%;
+        margin-right: 30px;
+        margin-top: 10px;
+      }
     }
   }
 
   &__featured-products {
     &__title {
       color: var(--primary-color);
+
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 40px;
+      }
     }
   }
 
   &__blog-section {
     &__blog-card--move-to-top {
       margin-top: -50px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 20px;
+      }
     }
   }
 
@@ -109,17 +160,31 @@ sf-header {
       justify-content: flex-end;
       display: flex;
       margin-top: -40px;
+
+
+      @include media-breakpoint-down(md) {
+        margin-top: 40px;
+      }
     }
   }
 
   &__blog-section-row {
     margin-bottom: 150px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+    }
   }
 
   &__extra-blog-graphic {
     display: block;
     margin-left: auto;
     margin-top: -220px;
+
+    @include media-breakpoint-down(md) {
+      max-width: 20%;
+      margin-top: -70px;
+    }
   }
 
   &__blog-title {
@@ -132,25 +197,54 @@ sf-header {
     line-height: 1;
     position: relative;
     z-index: 1;
+
     &.home-page__blog-title--secondary {
       color: var(--light-dark-color-2);
       z-index: 0;
       padding-left: 80px;
       margin-top: -120px;
+
+
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+      }
+    }
+
+
+    @include media-breakpoint-down(md) {
+      font-size: 110px;
     }
   }
 
   &__blog-section-wrapper {
     margin-top: 325px;
+    @include media-breakpoint-down(md) {
+      margin-top: 40px;
+    }
   }
 
   &__contact-section-wrapper {
     margin-top: 200px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 40px;
+    }
   }
 
   &__subscribe-form-section {
     margin-top: -50px;
     position: relative;
     z-index: 1;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 40px;
+      padding: 0;
+    }
+  }
+}
+
+sf-product-card {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 20px;
   }
 }
