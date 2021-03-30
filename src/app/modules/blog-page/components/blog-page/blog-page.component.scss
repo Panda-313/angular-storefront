@@ -1,0 +1,95 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
+:host {
+  display: block;
+  background-color: var(--light-blue-color);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.blog-page {
+  &__title-desc {
+    margin-top: 80px;
+    color: var(--light-dark-color);
+    margin-bottom: 30px;
+  }
+
+  &__graphic-1 {
+    margin-left: auto;
+    display: block;
+  }
+
+  &__graphic-2 {
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    z-index: 0;
+    @include media-breakpoint-up(sm) {
+      left: calc(0px - (100vw - var(--sm-container-max-width))/2);
+    }
+
+    @include media-breakpoint-up(md) {
+      bottom: unset;
+      top: 190px;
+      left: calc(0px - (100vw - var(--md-container-max-width))/2);
+    }
+
+    @include media-breakpoint-up(lg) {
+      left: calc(0px - (100vw - var(--lg-container-max-width))/2);
+    }
+
+    @include media-breakpoint-up(xl) {
+      left: calc(0px - (100vw - var(--xl-container-max-width))/2);
+    }
+  }
+
+  &__graphic-3 {
+    position: absolute;
+    right: 0;
+    bottom: 60%;
+    z-index: 0;
+
+    @include media-breakpoint-up(sm) {
+      right: calc(0px - (100vw - var(--sm-container-max-width))/2);
+    }
+
+    @include media-breakpoint-up(md) {
+      bottom: 20%;
+      right: calc(0px - (100vw - var(--md-container-max-width))/2);
+    }
+
+    @include media-breakpoint-up(lg) {
+      right: calc(0px - (100vw - var(--lg-container-max-width))/2);
+    }
+
+    @include media-breakpoint-up(xl) {
+      right: calc(0px - (100vw - var(--xl-container-max-width))/2);
+    }
+  }
+
+  &__desc-wrapper {
+    position: relative;
+
+    > .row {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+sf-blog-card {
+  margin-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    &:nth-of-type(3n+1) {
+      margin-top: 40px;
+    }
+
+    &:nth-of-type(3n) {
+      margin-top: 60px;
+    }
+  }
+}

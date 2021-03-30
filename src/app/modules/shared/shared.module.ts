@@ -7,17 +7,19 @@ import {ProductCardComponent} from "./components/product-card/product-card.compo
 import {ActionCardComponent} from './components/action-card/action-card.component';
 import {BlogCardComponent} from './components/blog-card/blog-card.component';
 import {MainFooterComponent} from './components/main-footer/main-footer.component';
+import { TwoLineTitleComponent } from './components/two-line-title/two-line-title.component';
 
 const components = [
   MainNavComponent,
   ProductCardComponent,
   ActionCardComponent,
   BlogCardComponent,
-  MainFooterComponent
+  MainFooterComponent,
+  TwoLineTitleComponent
 ];
 
 @NgModule({
-  declarations: [...components,],
+  declarations: [...components ],
   exports: [...components],
   imports: [
     CustomMaterialModule,

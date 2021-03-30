@@ -187,35 +187,6 @@ sf-header {
     }
   }
 
-  &__blog-title {
-    font-size: 313px;
-    font-weight: 700;
-    font-family: "Heebo", sans-serif;
-    color: var(--light-dark-color-3);
-    display: block;
-    margin: 0;
-    line-height: 1;
-    position: relative;
-    z-index: 1;
-
-    &.home-page__blog-title--secondary {
-      color: var(--light-dark-color-2);
-      z-index: 0;
-      padding-left: 80px;
-      margin-top: -120px;
-
-
-      @include media-breakpoint-down(md) {
-        margin-top: 0;
-      }
-    }
-
-
-    @include media-breakpoint-down(md) {
-      font-size: 110px;
-    }
-  }
-
   &__blog-section-wrapper {
     margin-top: 325px;
     @include media-breakpoint-down(md) {

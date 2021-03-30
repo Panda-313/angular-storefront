@@ -93,8 +93,16 @@
 <div class="container home-page__blog-section-wrapper">
   <div class="row home-page__blog-section-row">
     <div class="col-12 col-md-7">
-      <span class="home-page__blog-title">Blog&</span>
-      <span class="home-page__blog-title home-page__blog-title--secondary">News</span>
+
+      <sf-two-line-title [primary]="true">
+        <ng-container firstTitleLine>
+          Blog&
+        </ng-container>
+
+        <ng-container secondTitleLine>
+          News
+        </ng-container>
+      </sf-two-line-title>
     </div>
 
     <div class="col-12 offset-md-1 col-md-4">

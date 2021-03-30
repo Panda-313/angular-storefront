@@ -1,0 +1,23 @@
+<sf-header></sf-header>
+
+<div class="container blog-page__desc-wrapper">
+  <div class="row">
+    <div class="row">
+      <p class="col-12 offset-md-4 col-md-8 mat-display-2 blog-page__title-desc">
+        Quisque sit amet augue lorem. Donec sodales hendrerit orci et lobortis. Fusce dignissim mollis ante sed
+        vestibulum. Aliquam facilisis tristique tempor. Donec dictum lobortis felis, nec suscipit nisi suscipit ac.
+      </p>
+    </div>
+  </div>
+
+  <img src="../../../../../assets/images/blog-page/graphic_element_1.png" alt="" class="blog-page__graphic-1">
+
+  <div class="row">
+    <sf-blog-card class="col-12 col-md-4" *ngFor="let blogPost of mockedBlogPosts" [blogPost]="blogPost" [actionBtnText]="'Read more'" [showActionBtn]="true"></sf-blog-card>
+  </div>
+
+  <img src="../../../../../assets/images/blog-page/graphic_element_2.png" alt="" class="blog-page__graphic-2">
+  <img src="../../../../../assets/images/blog-page/graphic_element_3.png" alt="" class="blog-page__graphic-3">
+</div>
+
+
