@@ -10,8 +10,10 @@ import {Product} from "../../interfaces/product.interface";
 export class ProductCardComponent implements OnInit {
   @Input() product!: Product;
   @Input() showActionBtn = false;
+  @Input() showAddToFavoritesBtn = false;
   @Input() actionBtnText = '';
   @Output() clickActionBtn = new EventEmitter<Product>();
+  @Output() clickAddToFavoritesBtn = new EventEmitter<Product>();
 
   constructor() { }
 
@@ -20,5 +22,9 @@ export class ProductCardComponent implements OnInit {
 
   onActionBtnClick(): void {
     this.clickActionBtn.emit(this.product);
+  }
+
+  onAddToFavoritesBtnClick(): void {
+    this.clickAddToFavoritesBtn.emit(this.product);
   }
 }

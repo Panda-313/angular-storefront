@@ -4,7 +4,7 @@
 
 <ul>
   <li *ngFor="let link of navLinks">
-    <a [routerLink]="link.path" [routerLinkActive]="'navigation-list__link--active'">
+    <a [routerLink]="link.path" [routerLinkActive]="'navigation-list__link--active'" (click)="onCloseIconClick()">
       {{ link.label }}
     </a>
   </li>

@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  ::ng-deep {
+    .mat-form-field-underline {
+      display: none;
+    }
+
+    mat-label {
+      color: var(--light-dark-color);
+    }
+
+    .mat-select-arrow {
+      width: 18px;
+      height: 8px;
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      background-image: url('../../../../../assets/images/drop_down.png');
+      margin: 0 4px;
+    }
+
+    .mat-select-value-text {
+      color: var(--light-dark-color);
+    }
+  }
+}
+
+.mat-form-field {
+  max-width: 100%;
+}

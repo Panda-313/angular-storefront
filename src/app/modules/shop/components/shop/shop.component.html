@@ -1,7 +1,7 @@
 <div class="container shop__desc-wrapper">
   <div class="row">
     <div class="row">
-      <p class="col-12 offset-md-4 col-md-8 mat-display-2 shop__title-desc">
+      <p class="offset-4 col-9 offset-md-4 col-md-8 mat-display-2 shop__title-desc">
         Delenit volumus electram no quo. Has ad sapientem accommodare. </p>
     </div>
   </div>
@@ -9,8 +9,27 @@
   <img src="../../../../../assets/images/shop/graphic_element_1.png" alt="" class="shop__graphic-1">
 
   <div class="row">
-    <sf-product-card class="col-12 col-md-4" *ngFor="let product of mockedProducts" [product]="product"
-                  [actionBtnText]="'Add to cart'" [showActionBtn]="true"></sf-product-card>
+    <sf-sort-input [label]="'All categories'"
+                   [options]="categoriesOptions"
+                   class="offset-md-4 col-6 col-md-4"
+    ></sf-sort-input>
+    <sf-sort-input
+      [label]="'Newest'"
+      class="col-6 col-md-4"
+      [options]="orderOptions"></sf-sort-input>
+    <sf-product-card class="col-12 col-md-4"
+                     *ngFor="let product of mockedProducts"
+                     [product]="product"
+                     [actionBtnText]="'Add to cart'"
+                     [showAddToFavoritesBtn]="true"
+                     [showActionBtn]="true"></sf-product-card>
+
+    <div class="col-12">
+      <button mat-stroked-button color="accent">
+        Load more
+        <mat-icon>east</mat-icon>
+      </button>
+    </div>
   </div>
 
   <img src="../../../../../assets/images/shop/graphic_element_2.png" alt="" class="shop__graphic-2">

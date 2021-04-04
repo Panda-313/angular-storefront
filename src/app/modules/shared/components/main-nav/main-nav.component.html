@@ -1,11 +1,12 @@
 <div class="container">
   <nav class="row">
     <div class="col-6 col-md-2 main-nav__logo-wrapper">
-      <img src="../../../../../assets/images/logo.png" alt="logo">
+      <img src="../../../../../assets/images/logo.png" alt="logo" *ngIf="theme === 'primary'">
+      <img src="../../../../../assets/images/logo--accent.png" alt="logo" *ngIf="theme === 'accent'">
     </div>
 
     <div class="main-nav__link-wrapper  col-6 d-none d-md-flex">
-      <a *ngFor="let navLink of navLinks" [routerLink]="navLink.path" [routerLinkActive]="'main-nav__link--active'">
+      <a *ngFor="let navLink of navLinks" [routerLink]="navLink.path" [routerLinkActive]="'main-nav__link--active'" [routerLinkActiveOptions]="{exact: true}">
         {{ navLink.label }}
       </a>
     </div>

@@ -1,6 +1,7 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {MatIconRegistry} from "@angular/material/icon";
 import {DomSanitizer} from "@angular/platform-browser";
+import {NavigationService} from "./services/navigation.service";
 
 @Component({
   selector: 'sf-root',
@@ -10,9 +11,8 @@ import {DomSanitizer} from "@angular/platform-browser";
 })
 export class AppComponent {
   title = 'my-storefront';
-
-  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer
-  ) {
+  mainNavTheme$ = this.navigationService.navigationActiveTheme$;
+  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer, public navigationService: NavigationService) {
 
     this.matIconRegistry.addSvgIcon(
       'custom-arrow',
