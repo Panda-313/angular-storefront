@@ -23,6 +23,13 @@ const routes: Routes = [
     resolve: {
       navTheme: NavigationThemeResolver
     }
+  },
+  {
+    path: 'product',
+    loadChildren: () => import('./modules/product/product.module').then(m => m.ProductModule),
+    resolve: {
+      navTheme: NavigationThemeResolver
+    }
   }
 ];
 

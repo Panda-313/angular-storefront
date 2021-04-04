@@ -1,0 +1,11 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
+:host {
+  display: block;
+  background-color: var(--light-blue-color);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
