@@ -28,7 +28,7 @@
         </mat-icon>
       </button>
 
-      <button mat-icon-button class="d-md-none">
+      <button mat-icon-button class="d-md-none" (click)="openNav()">
         <mat-icon>
           menu
         </mat-icon>
@@ -36,3 +36,5 @@
     </div>
   </nav>
 </div>
+
+<sf-navigation-list class="d-md-none" *ngIf="navbarOpened$ | async" (closeIconClick)="onCloseIconClick()"></sf-navigation-list>

@@ -1,0 +1,11 @@
+<button mat-icon-button (click)="onCloseIconClick()">
+  <mat-icon>close</mat-icon>
+</button>
+
+<ul>
+  <li *ngFor="let link of navLinks">
+    <a [routerLink]="link.path" [routerLinkActive]="'navigation-list__link--active'">
+      {{ link.label }}
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,28 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
+:host {
+  display: block;
+  background-color: var(--light-blue-color);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.shop {
+  &__title-desc {
+    margin-top: 80px;
+    color: var(--light-dark-color);
+    margin-bottom: 30px;
+  }
+
+  &__desc-wrapper {
+    position: relative;
+
+    > .row {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

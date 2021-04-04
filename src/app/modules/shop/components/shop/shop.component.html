@@ -1,0 +1,18 @@
+<div class="container shop__desc-wrapper">
+  <div class="row">
+    <div class="row">
+      <p class="col-12 offset-md-4 col-md-8 mat-display-2 shop__title-desc">
+        Delenit volumus electram no quo. Has ad sapientem accommodare. </p>
+    </div>
+  </div>
+
+  <img src="../../../../../assets/images/shop/graphic_element_1.png" alt="" class="shop__graphic-1">
+
+  <div class="row">
+    <sf-product-card class="col-12 col-md-4" *ngFor="let product of mockedProducts" [product]="product"
+                  [actionBtnText]="'Add to cart'" [showActionBtn]="true"></sf-product-card>
+  </div>
+
+  <img src="../../../../../assets/images/shop/graphic_element_2.png" alt="" class="shop__graphic-2">
+  <img src="../../../../../assets/images/shop/graphic_element_3.png" alt="" class="shop__graphic-3">
+</div>

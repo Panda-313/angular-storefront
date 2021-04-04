@@ -8,6 +8,7 @@ import {ActionCardComponent} from './components/action-card/action-card.componen
 import {BlogCardComponent} from './components/blog-card/blog-card.component';
 import {MainFooterComponent} from './components/main-footer/main-footer.component';
 import { TwoLineTitleComponent } from './components/two-line-title/two-line-title.component';
+import { NavigationListComponent } from './components/navigation-list/navigation-list.component';
 
 const components = [
   MainNavComponent,
@@ -19,7 +20,7 @@ const components = [
 ];
 
 @NgModule({
-  declarations: [...components ],
+  declarations: [...components, NavigationListComponent],
   exports: [...components],
   imports: [
     CustomMaterialModule,

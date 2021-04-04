@@ -1,0 +1,36 @@
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--accent-color);
+  top: 0;
+  left: 0;
+  color: var(--light-grey-color);
+}
+
+button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 24px;
+  color: var(--light-grey-color);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
