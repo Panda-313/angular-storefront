@@ -1,0 +1,32 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-color);
+  padding: 50px 40px 80px;
+}
+
+h1, span {
+  font-size: 50px;
+  color: var(--light-grey-color);
+  font-weight: 700;
+  font-family: "Heebo", sans-serif;
+
+  @include media-breakpoint-up(md) {
+    font-size: 90px;
+  }
+}
+
+p {
+  margin-top: 30px;
+  color: var(--light-grey-color);
+  margin-bottom: 54px;
+}
+
+span {
+  margin-bottom: 92px;
+}

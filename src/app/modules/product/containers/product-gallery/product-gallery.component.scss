@@ -1,0 +1,28 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
+:host {
+  display: block;
+}
+
+.product-gallery {
+
+  &__small-img-wrapper {
+    padding-top: 30px;
+    padding-left: 40px;
+    display: flex;
+    background-color: var(--accent-color);
+
+    img {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+
+    @include media-breakpoint-up(md) {
+      background-color: transparent;
+    }
+  }
+}

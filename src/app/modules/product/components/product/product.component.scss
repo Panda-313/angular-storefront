@@ -8,4 +8,19 @@
   background-color: var(--light-blue-color);
   overflow-x: hidden;
   overflow-y: hidden;
+  padding-top: 110px;
+}
+
+.product {
+  &__description-wrapper {
+    @include media-breakpoint-down(md) {
+      padding: 0;
+    }
+  }
+}
+
+sf-product-gallery {
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
 }

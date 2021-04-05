@@ -11,7 +11,8 @@ export class NavigationThemeResolver implements Resolve<boolean> {
   }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
-    if (state.url === '/shop' || state.url === '/product') {
+    const activeRoute = route.routeConfig?.path;
+    if (activeRoute === 'shop' || activeRoute === 'product') {
       this.navigationService.setAccentNavigationTheme();
     } else {
       this.navigationService.setPrimaryNavigationTheme();
