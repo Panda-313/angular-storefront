@@ -14,6 +14,7 @@ export class ProductCardComponent implements OnInit {
   @Input() actionBtnText = '';
   @Output() clickActionBtn = new EventEmitter<Product>();
   @Output() clickAddToFavoritesBtn = new EventEmitter<Product>();
+  @Output() productCardClick = new EventEmitter<Product>();
 
   constructor() { }
 
@@ -26,5 +27,9 @@ export class ProductCardComponent implements OnInit {
 
   onAddToFavoritesBtnClick(): void {
     this.clickAddToFavoritesBtn.emit(this.product);
+  }
+
+  onProductCardClick(): void {
+    this.productCardClick.emit(this.product);
   }
 }

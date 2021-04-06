@@ -13,8 +13,46 @@
 
 .product {
   &__description-wrapper {
-    @include media-breakpoint-down(md) {
-      padding: 0;
+    background-color: var(--accent-color);
+
+    @include media-breakpoint-up(md) {
+      background-color: transparent;
+    }
+  }
+
+  &__description-section-wrapper {
+    padding-top: 50px;
+  }
+
+  &__read-more-btn {
+    margin-top: 30px;
+  }
+
+  &__title {
+    font-size: 50px;
+    color: var(--accent-color);
+    font-weight: 700;
+    font-family: "Heebo", sans-serif;
+    margin-bottom: 40px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 90px;
+    }
+  }
+
+  &__related-products-title {
+    @extend .product__title;
+    margin-top: 80px;
+    color: var(--primary-color);
+  }
+
+  &__related-products-title {
+    color: var(--primary-color);
+  }
+
+  &__product-desc-col {
+    @include media-breakpoint-up(md) {
+      background-color: var(--accent-color);
     }
   }
 }
@@ -22,5 +60,26 @@
 sf-product-gallery {
   @include media-breakpoint-down(md) {
     padding: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: calc(25% + 140px);
+    position: absolute;
+    left: calc(10% - 140px);
+  }
+}
+
+
+sf-product-card {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 20px;
+  }
+}
+
+sf-product-description {
+  @include media-breakpoint-up(md) {
+    max-width: calc(50% - 140px);
+    margin-right: 480px;
+    margin-left: auto;
   }
 }

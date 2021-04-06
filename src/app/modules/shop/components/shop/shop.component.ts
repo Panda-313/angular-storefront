@@ -1,6 +1,7 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {Product} from '../../../shared/interfaces/product.interface';
 import {SortOption} from '../../../shared/interfaces/sort-option.interface';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'sf-shop',
@@ -104,10 +105,13 @@ export class ShopComponent implements OnInit {
     },
   ];
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
   }
 
+  onProductCardClick(product: Product): void {
+    this.router.navigate(['product', product.productId])
+  }
 }

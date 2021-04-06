@@ -1,9 +1,63 @@
 <div class="container">
   <div class="row">
-    <sf-product-gallery class="col-12"></sf-product-gallery>
-    <div class="product__description-wrapper col-12">
-      <sf-product-description></sf-product-description>
+    <sf-product-gallery class="col-12 d-md-none"></sf-product-gallery>
+  </div>
+</div>
+
+<div class="product__description-wrapper">
+  <sf-product-gallery class="col-12 d-none d-md-block"></sf-product-gallery>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 offset-md-3 col-md-auto product__product-desc-col">
+        <sf-product-description></sf-product-description>
+      </div>
     </div>
   </div>
-  ELO
+</div>
+
+
+<div class="container product__description-section-wrapper">
+  <div class="row">
+    <h3 class="product__title col-12 offset-md-3 col-md-auto">
+      Description
+    </h3>
+
+    <p class="mat-body-2 col-12 offset-md-3 col-md-auto">
+      Curabitur sed massa eget dolor cursus elementum et lacinia ligula. Mauris eleifend sed enim ornare auctor.
+      Vivamus lorem erat, facilisis sit amet accumsan id, placerat vitae est. Vivamus accumsan sapien tortor, non
+      lacinia risus aliquet sed. Morbi mattis massa elit, ac vehicula purus imperdiet ac. Maecenas tincidunt vitae
+      turpis nec lacinia. Sed finibus orci pellentesque metus tempus, at lobortis metus faucibus. Donec in mi odio.
+      Sed blandit faucibus purus, et gravida quam elementum et. Praesent scelerisque, neque sed condimentum suscipit,
+      nisi enim pellentesque libero, non egestas ante magna at eros. In vel nisi eget nisl congue malesuada. Aenean
+      euismod, arcu quis pharetra sagittis, nulla diam molestie felis, at viverra neque lorem at sapien.
+    </p>
+
+    <div class="col-12 offset-md-3 col-md-auto">
+      <a mat-stroked-button color="secondary" type="button" class="product__read-more-btn">
+        Read more
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 offset-md-3 col-md-9">
+      <h3 class="product__related-products-title product__related-products-title">
+        Related products
+      </h3>
+    </div>
+
+    <sf-product-card *ngFor="let product of mockedProducts;let first = first"
+                     class="col-12 col-md-3"
+                     [class.offset-md-3]="first"
+                     [product]="product"
+                     [showActionBtn]="true" [actionBtnText]="'Add to card'">
+    </sf-product-card>
+
+    <div class="col-12 d-none d-md-block col-md-3">
+      <sf-action-card></sf-action-card>
+    </div>
+  </div>
 </div>

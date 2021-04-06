@@ -7,7 +7,29 @@
   molestie ac feugiat sed.
 </p>
 
-<span class="mat-display-2">
+<span class="mat-display-2 product-description__price">
   $28.99
 </span>
+
+<div>
+  <span class="mat-headline">
+    Quantity:
+  </span>
+
+  <mat-form-field class="basic-input-field">
+    <input matInput min="1" max="10" [formControl]="quantityControl" type="number" />
+    <mat-error *ngIf="quantityControl.hasError('max')">
+      Maksymalna ilość produktów została przekroczona
+    </mat-error>
+
+    <mat-error *ngIf="quantityControl.hasError('min')">
+      Zamów minimalnie 1 produkt
+    </mat-error>
+  </mat-form-field>
+</div>
+
+<button mat-stroked-button class="link-button" type="button" (click)="onActionBtnClick()">
+  Add to card
+</button>
+
 

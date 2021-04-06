@@ -1,4 +1,4 @@
-<img [src]="product.productImageSrc"  [alt]="product.productImageAlt" />
+<img [src]="product.productImageSrc"  [alt]="product.productImageAlt" (click)="onProductCardClick()" />
 <h6 class="mat-headline">
   {{product.productTitle}}
 </h6>

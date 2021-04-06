@@ -9,6 +9,10 @@
 
 .product-gallery {
 
+  &__main-img {
+    width: 100%;
+  }
+
   &__small-img-wrapper {
     padding-top: 30px;
     padding-left: 40px;
@@ -23,6 +27,7 @@
 
     @include media-breakpoint-up(md) {
       background-color: transparent;
+      padding-left: 0;
     }
   }
 }

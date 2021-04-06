@@ -7,10 +7,16 @@
   display: flex;
   flex-direction: column;
   background-color: var(--accent-color);
-  padding: 50px 40px 80px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  &::ng-deep {
+    .mat-form-field-flex {
+      width: 57px;
+    }
+  }
 }
 
-h1, span {
+h1, .product-description__price {
   font-size: 50px;
   color: var(--light-grey-color);
   font-weight: 700;
@@ -28,5 +34,18 @@ p {
 }
 
 span {
-  margin-bottom: 92px;
+  color: var(--light-grey-color);
+  font-weight: 700;
+  font-family: "Heebo", sans-serif;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+}
+
+.mat-form-field {
+  width: 100%;
 }

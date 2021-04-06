@@ -21,6 +21,7 @@
                      *ngFor="let product of mockedProducts"
                      [product]="product"
                      [actionBtnText]="'Add to cart'"
+                     (productCardClick)="onProductCardClick($event)"
                      [showAddToFavoritesBtn]="true"
                      [showActionBtn]="true"></sf-product-card>
 
