@@ -1,0 +1,106 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
+$space: 190px;
+
+:host {
+  display: block;
+  position: relative;
+  background-color: var(--accent-color);
+  padding-top: 107px;
+  padding-bottom: 52px;
+  margin-top: $space;
+  &::ng-deep {
+    .mat-form-field-flex {
+      width: 57px;
+    }
+
+    @include media-breakpoint-up(md){
+      .mat-form-field-wrapper {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 380px;
+    padding: 0 20px 0 180px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 0 250px 0 250px;
+  }
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.cart {
+  &__quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-size: 50px;
+    color: var(--light-grey-color);
+    font-weight: 700;
+    font-family: "Heebo", sans-serif;
+    margin-left: auto;
+    display: block;
+    text-align: right;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(md) {
+      margin-left: unset;
+    }
+  }
+
+  &__quantity-title {
+    color: var(--light-grey-color);
+    font-weight: 700;
+    font-family: "Heebo", sans-serif;
+    text-transform: uppercase;
+    margin-right: 30px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+h3 {
+  font-size: 50px;
+  color: var(--light-grey-color);
+  font-weight: 700;
+  font-family: "Heebo", sans-serif;
+  margin-bottom: 0;
+}
+
+.mat-form-field {
+  width: 57px;
+}
+
+img {
+  position: absolute;
+  top: -$space;
+  width: 265px;
+  height: 265px;
+
+  @include media-breakpoint-up(md) {
+    top: 50%;
+    transform: translateY(-50%) translateX(50%);
+    right: 100%;
+  }
+}

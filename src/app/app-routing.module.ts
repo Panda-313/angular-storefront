@@ -30,6 +30,13 @@ const routes: Routes = [
     resolve: {
       navTheme: NavigationThemeResolver
     }
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./modules/cart/cart.module').then(m => m.CartModule),
+    resolve: {
+      navTheme: NavigationThemeResolver
+    }
   }
 ];
 

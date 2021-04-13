@@ -1,0 +1,19 @@
+<img [src]="product?.productImageSrc" [alt]="product?.productImageAlt">
+
+<h3 class="mat-display-3">
+  {{ product?.productTitle }}
+</h3>
+
+<div class="cart__quantity">
+  <span class="mat-headline cart__quantity-title">
+    Quantity
+  </span>
+
+  <mat-form-field class="basic-input-field">
+    <input matInput min="1" max="10" [formControl]="quantityControl" type="number"/>
+  </mat-form-field>
+</div>
+
+<span class="mat-display-2 cart__price">
+    $28.99
+</span>

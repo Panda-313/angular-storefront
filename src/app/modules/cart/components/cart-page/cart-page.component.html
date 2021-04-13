@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="row">
+    <h1 class="col-auto offset-md-3">Your cart</h1>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <sf-cart *ngFor="let product of mockedProducts" [product]="product" class="col-12 offset-md-3 col-md-9"></sf-cart>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h2 class="col-auto offset-md-7">
+      Summary
+    </h2>
+
+    <p class="cart-page__subtotal col-12 col-md-5 offset-md-7">
+      <span class="mat-headline mb-0">
+        Subtotal
+      </span>
+
+      <span class="mat-display-2 mb-0">
+        $79,97
+      </span>
+    </p>
+  </div>
+</div>

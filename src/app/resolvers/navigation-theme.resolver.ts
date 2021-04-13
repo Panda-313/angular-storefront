@@ -12,7 +12,7 @@ export class NavigationThemeResolver implements Resolve<boolean> {
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
     const activeRoute = route.routeConfig?.path;
-    if (activeRoute === 'shop' || activeRoute === 'product') {
+    if (activeRoute === 'shop' || activeRoute === 'product' || activeRoute === 'cart') {
       this.navigationService.setAccentNavigationTheme();
     } else {
       this.navigationService.setPrimaryNavigationTheme();

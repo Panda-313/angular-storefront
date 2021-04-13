@@ -1,0 +1,51 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
+:host {
+  display: block;
+  background-color: var(--light-blue-color);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 110px;
+}
+
+h1, h2 {
+  color: var(--light-dark-color);
+  font-weight: 700;
+  font-family: "Heebo", sans-serif;
+  font-size: 70px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 90px;
+  }
+}
+
+sf-cart {
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+}
+
+.cart-page {
+  &__subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+
+    .mat-headline {
+      color: var(--light-dark-color);
+      font-weight: 700;
+    }
+
+    .mat-display-2 {
+      @include media-breakpoint-down(md) {
+        font-size: 50px;
+      }
+    }
+  }
+}
