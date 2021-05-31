@@ -1,3 +1,8 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
 :host {
   position: fixed;
   z-index: 99;
@@ -5,8 +10,7 @@
   left: 50%;
   width: 100%;
   display: block;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding: 35px 0;
   transform: translateX(-50%);
   transition: 0.2s all ease-in-out;
 
@@ -57,11 +61,19 @@
       background-color: rgba(166, 133, 73, 0.9);
     }
   }
+
+  @include media-breakpoint-down(md) {
+    padding: 26px 0;
+  }
 }
 
 img {
   position: absolute;
   top: -16px;
+
+  @include media-breakpoint-down(md) {
+    height: 41px;
+  }
 }
 
 .main-nav {
@@ -75,6 +87,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @include media-breakpoint-down(md) {
+      margin-top: -7px;
+    }
   }
 
   &__logo-wrapper {

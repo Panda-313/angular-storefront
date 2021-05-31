@@ -8,3 +8,13 @@ $container-max-widths: (
 
 @import '~bootstrap/scss/bootstrap-grid';
 @import '~bootstrap/scss/utilities';
+
+
+@media (min-width: map-get($grid-breakpoints, xs)) and (max-width: map-get($grid-breakpoints, sm)){
+  body {
+    .container {
+      padding-right: 1.55rem;
+      padding-left: 1.55rem;
+    }
+  }
+}
